@@ -1,0 +1,69 @@
+﻿@model IEnumerable<RentForPark.Models.Comanda>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Produs.Tip)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.User.Nume)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Cantitate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Adresa)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TotalPret)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DataLivrare)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DataReturnare)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Produs.Tip)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.User.Nume)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Cantitate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Adresa)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TotalPret)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DataLivrare)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DataReturnare)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.IdComanda }) |
+            @Html.ActionLink("Details", "Details", new { id=item.IdComanda }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.IdComanda })
+        </td>
+    </tr>
+}
+
+</table>

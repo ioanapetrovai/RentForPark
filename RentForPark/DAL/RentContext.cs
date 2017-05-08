@@ -16,8 +16,8 @@ namespace RentForPark.DAL
 
 
         public DbSet<User> User { get; set; }
-        public DbSet<Comenzi> Comenzi { get; set; }
-        public DbSet<Produse> Produse { get; set; }
+        public DbSet<Comanda> Comenzi { get; set; }
+        public DbSet<Produs> Produse { get; set; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
 
