@@ -6,7 +6,7 @@ Must have:
 -visual studio 2015
 -cont github
 -conectare in visual studio la github pentru a putea face commit
--new brench pentru fiecare colaborator
+-brench pentru fiecare colaborator (sunt create deja cu numele voastre)
 -doar proiectul final e pe master
 
 Pentru a lucra la proiect:
