@@ -63,7 +63,8 @@ namespace RentForPark.Models
         [Display(Name = "Data Inscrierii")]
         public DateTime DataInscrierii { get; set; }
         public bool Admin { get; set; }
-        public virtual ICollection<Comenzi> Comenzi { get; set; }
+        public virtual ICollection<Comenzi> Comenzi { get; set; }
+
 
     }
 }

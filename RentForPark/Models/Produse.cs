@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
@@ -10,7 +11,7 @@ namespace RentForPark.Models
     {
         
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
-
+        [Required]
         public int ProdusId { get; set; }
         public string Tip { get; set; }
         public string Nume { get; set; }
