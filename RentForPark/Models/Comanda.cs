@@ -22,9 +22,13 @@ namespace RentForPark.Models
         [Display(Name = "Pret Total")]
         public double TotalPret { get; set; }
         [Required(ErrorMessage = "Data de livrarare este obligatorie")]
+         [DataType(DataType.DateTime)]
+        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
         [Display(Name = "Data de Livrare")]
         public DateTime DataLivrare { get; set; }
         [Required(ErrorMessage = "Data de returnare este obligatorie")]
+         [DataType(DataType.DateTime)]
+        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
         [Display(Name = "Data de Returnare")]
         public DateTime DataReturnare { get; set; }
         public virtual User User { get; set; }
