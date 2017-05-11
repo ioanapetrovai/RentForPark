@@ -53,6 +53,17 @@ Home: #9a0000;
 	height: 100%;
 }
 
+.main-nav>.nav-comenzi a{
+	padding-left: 26px;
+}
+.main-nav>.nav-comenzi a span:before{
+	font-size: 32px;
+}
+.main-nav>.nav-comenzi a span{
+	margin-right: 0px;
+}
+
+
 .main-nav li{
 	display: flex;
 	align-items: stretch;
@@ -63,8 +74,12 @@ Home: #9a0000;
 	/*border-left: 1px solid white;*/
 }
 
-.main-nav li:first-child{
+.main-nav li:first-child:not(.nav-comenzi){
 	margin-left: 10px;
+}
+
+.main-nav>.nav-comenzi{
+	margin-left: -10px;
 }
 
 .main-nav>li>a{
