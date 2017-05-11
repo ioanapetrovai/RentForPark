@@ -1,61 +1,124 @@
-﻿<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
-    @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
-
+<link href="https://fonts.googleapis.com/css?family=Merriweather|Ubuntu" rel="stylesheet">
+@Styles.Render("~/Content/font/flaticon.css")
+@Styles.Render("~/Content/foundation.min.css")
+@Styles.Render("~/Content/style.css")
 </head>
-<body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("RentForPark", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                    <li>
-                        @Html.ActionLink("Biciclete", "Index","Biciclete")
-                    </li>
-                    
-                    <li>
-                        @Html.ActionLink("Trotinete", "Index","Trotinete")
-                    </li>
-                    <li>
-                        @Html.ActionLink("Role", "Index","Role")
-                    </li>
-                    <li>
-                        @Html.ActionLink("Skates", "Index","Skate")
-                    </li>
-                    <li>
-                    @Html.ActionLink("Comenzi", "Index", "Comenzi")
-                    </li>
 
-                </ul>
-                @Html.Partial("_LoginPartial")
-            </div>
-        </div>
-    </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - RentForPark</p>
-        </footer>
-    </div>
+<header id='main-header'>
+	<ul class='main-nav'>
+			<li class='nav-comenzi background-role shutter-out-vertical'><a href=@Url.Action( "Index", "Comenzi" ) ><span class='flaticon-payment'></span></a></li>
+		<li class='nav-home background-home shutter-out-vertical'><a href=@Url.Action( "Index", "Home" ) ><span class='flaticon-home'></span>Home</a></li>
+		<li class='nav-bici background-bici shutter-out-vertical'><a href=@Url.Action( "Index", "Biciclete" ) ><span class='flaticon-sports'></span>Biciclete</a></li>
+		<li class='nav-troti background-troti shutter-out-vertical'><a href=@Url.Action( "Index", "Trotinete" ) ><span class='flaticon-transport'></span>Trotinete</a></li>
+		<li class='nav-skate background-skate shutter-out-vertical'><a href=@Url.Action( "Index", "Skate" ) ><span class='flaticon-skateboard-1'></span>Skate-uri</a></li>
+		<li class='nav-role background-role shutter-out-vertical'><a href=@Url.Action( "Index", "Role" ) ><span class='flaticon-roller-skate'></span>Role</a></li>
+	</ul>
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
-</body>
+@Html.Partial("_LoginPartial")
+	<div class='in-the-right flex-container'>
+		<button class='search-container'></button>
+		<a class='button login-button'><span class='flaticon-man-user'></span>Login | Inregistrare</a>
+		
+		
+	</div>
+
+</header>
+
+<div class='row'>
+	@RenderBody()
+</div>
+
+<footer class='page-footer'>
+
+	<svg class='footer-svg' viewBox="0 0 100 100" preserveAspectRatio="none">
+
+	<defs>
+
+		<pattern id="svg-bici" patternUnits="userSpaceOnUse" width="100" height="100">'
+	  		<rect fill="red" x="0" y="0" width="100" height="100"></rect>
+	    	<text class="flaticon" x="-6" y="38" fill="white" transform="scale(1,2)">&#xf107</text>
+	  	</pattern>
+
+	  	<pattern id="svg-bici-hover" patternUnits="userSpaceOnUse" width="100" height="100">'
+	  		<rect fill="black" x="0" y="0" width="100" height="100"></rect>
+	  		<text class="flaticon" x="-8" y="34" fill="white" transform="scale(1.17,2.4)">&#xf107</text>
+	  	</pattern>
+
+	  	<pattern id="svg-troti" patternUnits="userSpaceOnUse" width="100" height="100">'
+	  		<rect fill="green" x="0" y="0" width="100" height="100"></rect>
+	    	<text class='flaticon' x="15" y="38" fill="white" transform="scale(1,2)">&#xf102</text>
+	  	</pattern>
+
+	  	<pattern id="svg-troti-hover" patternUnits="userSpaceOnUse" width="100" height="100">'
+	  		<rect fill="black" x="0" y="0" width="100" height="100"></rect>
+	  		<text class="flaticon" x="11" y="35" fill="white" transform="scale(1.12,2.2)">&#xf102</text>
+	  	</pattern>
+
+	  	<pattern id="svg-skate" patternUnits="userSpaceOnUse" width="100" height="100">'
+	  		<rect fill="#004e7b" x="0" y="0" width="100" height="100"></rect>
+	    	<text class='flaticon' x="48" y="38" fill="white" transform="scale(1,2)">&#xf104</text>
+	  	</pattern>
+
+	  	<pattern id="svg-skate-hover" patternUnits="userSpaceOnUse" width="100" height="100">'
+	  		<rect fill="black" x="0" y="0" width="100" height="100"></rect>
+	  		<text class="flaticon" x="37" y="35" fill="white" transform="scale(1.17,2.3)">&#xf104</text>
+	  	</pattern>
+
+		<pattern id="svg-role" patternUnits="userSpaceOnUse" width="100" height="100">'
+	  		<rect fill="#e2bb00" x="0" y="0" width="100" height="100"></rect>
+	  		<text class="flaticon" x="125" y="46" fill="white" transform="scale(0.65,1.45)">&#xf101</text>
+	  	</pattern>
+
+	  	<pattern id="svg-role-hover" patternUnits="userSpaceOnUse" width="100" height="100">'
+	  		<rect fill="blac;" x="0" y="0" width="100" height="100"></rect>
+	    	<text class='flaticon' x="86" y="42" fill="white" transform="scale(0.9,1.7)">&#xf101</text> -->
+	  	</pattern>
+	  	
+
+	</defs>
+
+	
+	<a href=@Url.Action( "Index", "Biciclete" )>
+		<polygon fill='url(#svg-bici)' points="0,0 26,0 14,100 0,100"></polygon>
+		<polygon class='show-on-hover' fill='url(#svg-bici-hover)' points="0,0 26,0 14,100 0,100"></polygon>
+	</a>
+	
+
+	
+ 	<a href=@Url.Action( "Index", "Trotinete" )>
+		<polygon fill='url(#svg-troti)' points="26,0 59,0 40,100 14,100"></polygon>
+		<polygon class='show-on-hover' fill='url(#svg-troti-hover)' points="26,0 59,0 40,100 14,100"></polygon>
+	</a>
+	
+	
+
+	<a href=@Url.Action( "Index", "Skate" )>
+		<polygon fill='url(#svg-skate)' points="59,0 93,0 65,100 40,100"></polygon>
+		<polygon class='show-on-hover' fill='url(#svg-skate-hover)' points="59,0 93,0 65,100 40,100"></polygon></a>
+	</a>	
+	
+
+	
+	<a href=@Url.Action( "Index", "Role" )>
+		<polygon fill='url(#svg-role)' points="93,0 100,0 100,100 65,100" ></polygon>
+		<polygon class='show-on-hover' fill='url(#svg-role-hover)' points="93,0 100,0 100,100 65,100" ></polygon>
+	</a>
+	
+
+	</svg>
+
+	<style>
+		.svg-bici{
+	fill: 'url(#svg-bici)';
+}
+
+.svg-bici:hover{
+	fill: 'url(#svg-bici-hover)';
+}
+	</style>
+
+</footer>
+
 </html>
