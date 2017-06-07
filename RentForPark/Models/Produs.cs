@@ -9,7 +9,6 @@ namespace RentForPark.Models
 {
     public class Produs
     {
-        
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
         [Required]
         [Key]
@@ -18,9 +17,5 @@ namespace RentForPark.Models
         public string Nume { get; set; }
         public string Descriere { get; set; }
         public double Pret { get; set; }
-
-        public virtual ICollection<Comanda> Comenzi { get; set; }
-
-
     }
 }

@@ -77,7 +77,6 @@ c:\users\ioana\documents\visual studio 2015\Projects\RentForPark\RentForPark\bin
 c:\users\ioana\documents\visual studio 2015\Projects\RentForPark\RentForPark\bin\Microsoft.Owin.Security.Google.xml
 c:\users\ioana\documents\visual studio 2015\Projects\RentForPark\RentForPark\bin\Microsoft.Owin.Security.Twitter.xml
 c:\users\ioana\documents\visual studio 2015\Projects\RentForPark\RentForPark\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-c:\users\ioana\documents\visual studio 2015\Projects\RentForPark\RentForPark\obj\Debug\RentForPark.csprojResolveAssemblyReference.cache
 c:\users\ioana\documents\visual studio 2015\Projects\RentForPark\RentForPark\obj\Debug\RentForPark.dll
 c:\users\ioana\documents\visual studio 2015\Projects\RentForPark\RentForPark\obj\Debug\RentForPark.pdb
 C:\Users\Ioana\Desktop\RentForPark-cebcd6741dd18a81c0c4637c9d198d4d156c7b0f\RentForPark\bin\ApplicationInsights.config
@@ -162,3 +161,4 @@ C:\Users\Ioana\Desktop\RentForPark-cebcd6741dd18a81c0c4637c9d198d4d156c7b0f\Rent
 C:\Users\Ioana\Desktop\RentForPark-cebcd6741dd18a81c0c4637c9d198d4d156c7b0f\RentForPark\obj\Debug\RentForPark.csprojResolveAssemblyReference.cache
 C:\Users\Ioana\Desktop\RentForPark-cebcd6741dd18a81c0c4637c9d198d4d156c7b0f\RentForPark\obj\Debug\RentForPark.dll
 C:\Users\Ioana\Desktop\RentForPark-cebcd6741dd18a81c0c4637c9d198d4d156c7b0f\RentForPark\obj\Debug\RentForPark.pdb
+C:\Users\Ioana\Documents\Visual Studio 2015\Projects\RentForPark\RentForPark\obj\Debug\RentForPark.csprojResolveAssemblyReference.cache

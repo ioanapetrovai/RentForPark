@@ -27,6 +27,8 @@
     </tr>
 
 @foreach (var item in Model) {
+    if (item.Tip == "4")
+    {
     <tr>
         <td>
             @Html.DisplayFor(modelItem => item.Tip)
@@ -41,11 +43,12 @@
             @Html.DisplayFor(modelItem => item.Pret)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.IdProdus }) |
-            @Html.ActionLink("Details", "Details", new { id=item.IdProdus }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.IdProdus })
+            @Html.ActionLink("Edit", "Edit", new { id = item.IdProdus }) |
+            @Html.ActionLink("Details", "Details", new { id = item.IdProdus }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.IdProdus })
         </td>
     </tr>
+    }
 }
 
 </table>
